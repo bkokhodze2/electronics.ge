@@ -1,0 +1,626 @@
+body {
+  background-image: url("images/ss.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+ 
+  margin:0 auto;
+  margin-bottom: 5px;
+}
+td{
+  border:1px solid black;
+  min-width: 330px;
+
+}
+
+ th {
+  min-width: auto;
+  border: 1px solid #000000;
+  text-align: left;
+  color: white;
+  
+  justify-content: center;
+
+}
+.gaukmeba{
+
+  border: none;
+  min-width: auto;
+  padding:2px;
+  color:red;
+  background-color: black;
+  cursor: pointer;
+}
+.safasuri{
+  min-width: 80px;
+ 
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+
+
+.card-text {
+  color: white;
+}
+
+.card-title {
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  bottom: 0px;
+}
+
+
+.bakuri {
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+  left: 10px;
+  bottom: 5px;
+  position: relative;
+}
+
+
+.bolo {
+  background-color: rgb(90, 62, 110);
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-top: 400px;
+  bottom: 0px;
+  width: 100%;
+  height: 95px;
+  overflow: hidden;
+
+}
+
+.white {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.fb {
+  color: rgba(0, 0, 0, 0.678);
+  text-decoration: none;
+  width: px;
+}
+
+.fb:hover {
+  color: rgba(0, 0, 0, 0.678);
+  text-decoration: none;
+}
+.search {
+  position: block;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+
+
+#knopka{
+  position: relative;
+  margin:0 auto;
+}
+
+.saertodiv {
+  border: 3px solid black;
+  display: flex;
+  float: left;
+  flex-direction: row-reverse;
+  overflow: hidden;
+  position: relative;
+  width: 47%;
+  height: 200px;
+  margin-top: 55px;
+  margin-left: 20px;
+  background-color: transparent;
+}
+
+.namediv {
+  align-items: center;
+  order: 3;
+  color: rgba(255, 0, 0, 0.685);
+  font-weight: bold;
+  margin: auto;
+  padding-right: 15px;
+  font-size: 30px;
+}
+.descriptiondiv {
+  font-size: 20px;
+  color: white;
+  order: 2;
+  align-items: center;
+  margin: auto;
+}
+.pricediv {
+  font-size: 40px;
+  order: 5;
+  color: white;
+}
+.imgdiv {
+  margin: auto;
+  order: 4;
+  width: 190px;
+  height: auto;
+  position: relative;
+}
+.b {
+  display: block;
+}
+.image {
+  height: 100%;
+  width: 110px;
+  position: relative;
+}
+.name {
+  font-size: 1px;
+  opacity: 0;
+}
+.media{
+  margin: 0 auto;
+}
+.select{
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  width: 200px;
+ text-align: center;
+ position: absolute;
+}
+.option{
+  font-size: 20px;
+}
+
+.yuti{
+  order: 1;
+  
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+ 
+}
+.shida{
+  border-radius: 10px;
+  margin:40px 39px;
+  flex-grow: 1;
+  flex-basis: 250px;
+  position: relative;
+  box-shadow:0 0px 40px 10px rgb(255, 0, 0);
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.shida:hover{
+  transform: scale(1.1);
+  
+  box-shadow:0px 0px 40px 20px rgb(76, 0, 255);
+}
+
+.brendi{
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  order:2;
+}
+.picture{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin:0 auto;
+  height: 190px;
+  width: auto;
+  order:3;
+}
+.fasi{
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  margin:0 auto;
+  order:3;
+}
+.yidva{
+  
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin:0 auto;
+  min-width: 60%;
+  border-radius: 25px;
+  border:3px solid blue;
+  background-color: red;
+  color:rgb(0, 0, 0);
+  font-weight: bold;
+  transition: 0.8s;
+  order:4;
+
+}
+.yidva:hover{
+  border:3px solid transparent;
+  color:white;
+  border-radius: 0px;
+  min-width: 100%;
+  box-shadow:0px 20px 30px 7px rgb(4, 0, 255);
+}
+
+.tanxa{
+  font-size: 24px;
+  position: absolute;
+  border-radius: 25px;
+  border:3px solid blue;
+  background-color: red;
+  color:rgb(0, 0, 0);
+  font-weight: bold;
+  transition: 0.8s;
+  bottom: 0px;
+  margin-bottom: 20px;
+  padding-left:20px;
+  padding-right:20px;
+  left:50%;
+  transform: translateX(-50%) ;
+  width: 90%;
+  text-align: center;
+}
+.tanxa:hover{
+ color:black;
+ text-decoration: none;
+ 
+}
+
+.main{
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 30px;
+}
+.card-img-top{
+   height: 250px;
+   width: auto;
+   position: relative;
+   margin: 0 auto;
+}
+.card {
+ height: 510px;
+ width: auto;
+  position: relative;
+  background-image: linear-gradient(to top, rgba(255, 0, 0, 0.219), rgba(255,0,0,1));
+  border-radius: 15px;
+  border:2px solid black;
+  display: flex;
+  justify-content: space-between;
+  
+}
+.card-body{
+  margin:0 auto;
+}
+
+.carusel{
+  order: 2;
+  height: 510px;
+  width:50%;
+  position: relative;
+  margin:0 auto;
+  margin-top: 10px;
+}
+
+.btn-primary{
+  color:rgb(255, 255, 255);
+  font-weight: bold;
+  border-radius: 10px;
+  position: absolute;
+  bottom:5px;
+  width: 90%;
+  margin: 0 auto;
+  transition: 0.6s;
+  border:1px solid black;
+  background-image: linear-gradient(to top, rgb(0, 4, 255), rgb(255, 0, 0));
+  
+}
+.btn-primary:hover{
+border-radius: 20px;
+width: 100%;
+border:1px solid black;
+box-shadow:0px 20px 30px 7px rgb(4, 0, 255);
+}
+
+.fa-shopping-cart{
+  padding-top: 5px;
+  color:rgb(36, 35, 35);
+}
+.gilaki2{
+  margin-bottom:12px;
+  position: relative;
+  cursor: pointer;
+  font-size: 30px;
+  border:none;
+  width: 180px;
+  height: 40px;
+  margin-top:4px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.slick-next {
+  margin-left: 10px;
+}
+.slick-prev{
+  margin-right: 0px;
+}
+
+.card-title{
+  color: black;
+}
+.card-text{
+  color: black;
+}
+.dzebna{
+  height: 35px;
+ transition: 1s;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  border: 1.5px solid rgb(0, 0, 0);
+}
+.dzebna:hover{
+  border-radius: 10px;
+}
+
+#inputName{
+  min-width: 30%;
+}
+.navbar-toggler{
+  margin:0 auto;
+}
+
+
+.gilaki{
+  height: 35px;
+  background-color: #fff;
+  color:rgb(0, 0, 0);
+  font-size: 20px;
+  border: 1.5px solid rgb(0, 0, 0);
+  padding-top: 1px;
+}
+.gilaki:hover{
+  color:black;
+  background-color: #fff;
+  
+}
+.navbar{
+  box-shadow:0 10px 50px 5px rgb(252, 252, 252);
+}
+.navbar-brand{
+ 
+ font-size: 30px;
+}
+
+
+.nav-item{
+  border-right: 1px solid black;
+  transition: 0.5s;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.nav-item:last-child{
+  border-right:none;
+}
+.nav-link:last-child{
+  border-right: none;
+}
+.navbar-light .navbar-nav .nav-link {
+color:black;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+  color:black;
+}
+.nav-item:hover {
+  font-size: 20px;
+  
+}
+.modzravi:hover{
+  transition: 0.5s;
+  transform:translateY(-5px);
+}
+
+
+.navbar-brand{
+  padding-right: 10px;
+  border-right: 8px double black;
+}
+
+
+.dropdown-menu{
+  background-color:white;
+}
+.dropdown-item{ 
+  border-bottom: 1px solid black;
+  transition: 0.4s;
+}
+.dropdown-item:hover{
+  transform: scale(1.2);
+  background-color: rgb(199, 196, 196);
+  border-radius: 20px;
+  border-bottom: 1px solid  transparent;
+}
+
+
+.kalata{
+  position:fixed;
+  background-color: #fff;
+  width: 100px;
+  height:30px;
+  border-radius: 10px;
+  transition: 2s;
+  right: -100px;
+  text-align: center;
+}
+
+.kalata2{
+ right: 10px;
+ top:90px;
+ font-size: 18px;
+ padding-left: 5px;
+ padding-right: 5px;
+ cursor: pointer;
+ max-width: auto; 
+ height: auto; 
+}
+.kalatasul{
+  position:fixed;
+  background-color: #fff;
+  width: 100px;
+  height:30px;
+  border-radius: 10px;
+  transition: 2s;
+  right: -190px;
+  text-align: center;
+}
+
+.kalatasul2{
+  right: 10px;
+  top:150px;
+  font-size: 18px;
+  padding-left: 5px;
+  padding-right: 5px;
+  cursor: pointer;
+  max-width: 80px; 
+  height: auto; 
+}
+
+
+.gaukmeba1 {
+  position: fixed;
+  background-color: rgb(255, 255, 255);
+  right: -490px;
+  border-radius: 20px;
+  transition: all 2s ease 0s;
+}
+
+.gaukmeba2 {
+  color: red;
+  font-size: 30px;
+  right: 10px;
+  width: 40px;
+  height: auto;
+  top: 235px;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 2s ease 0s;
+}
+
+.zemot{
+  top:-250px;
+}
+@media screen and (max-width: 616px) {
+  .white {
+    font-size: 15px;
+  }
+  .short {
+    font-size: 14px;
+  }
+  .bakuri {
+    left: 0px;
+  }
+
+  .carusel{
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .name {
+    opacity: 1;
+    font-size: 40px;
+    margin-top: 25px;
+    margin-left: 20px;
+    color: white;
+  }
+  .image {
+    position: absolute;
+    right: 0px;
+    margin-right: 10px;
+  }
+  .media {
+    position: block;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .bakuri {
+    display: none;
+  }
+}
+
+@media screen and (max-width:991px){
+  .nav-item{
+    border: none;
+    width: 100%;
+    margin:0 auto;
+    width: 40%;
+  }
+  
+  .nav-item:hover{
+    border:none;
+  }
+  .nav-link{
+   display: flex;
+   justify-content: center;
+   margin:0 auto;
+   border: none;
+   border-bottom: 1px solid black;
+  }
+  .nav-item:first-child{
+    border:none;
+    margin:0 auto;
+  }
+  .dzebna{
+    width:40%;
+  }
+  .search{
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar-brand{
+    border:none;
+  }
+  
+  
+}
+
+@media screen and (max-width:1165px){
+  .nav-item{
+  }
+  
+  
+
+  .navbar-brand{
+    display: none;
+  }
+
+}
+
+
+

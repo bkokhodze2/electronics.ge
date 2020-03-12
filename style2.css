@@ -1,0 +1,126 @@
+body {
+  background-image: url("images/foni.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.saertodiv {
+  border: 3px solid black;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  float: left;
+  overflow: hidden;
+
+  width: 45%;
+  height: 200px;
+  background-image: url(images/foni1.png);
+}
+.namediv {
+  align-items: center;
+  order: 3;
+  color: rgba(255, 0, 0, 0.685);
+  font-weight: bold;
+  margin: auto;
+  padding-right: 15px;
+  font-size: 30px;
+}
+.descriptiondiv {
+  font-size: 20px;
+  color: white;
+  font-size: 22px;
+  order: 2;
+  align-items: center;
+  margin: auto;
+}
+.pricediv {
+  position: absolute;
+  margin: auto;
+  font-size: 30px;
+  order: 5;
+  color: white;
+}
+.imgdiv {
+  margin: auto;
+  order: 4;
+  width: 190px;
+  height: auto;
+  position: relative;
+}
+@media screen and (max-width: 1122px) {
+  .saertodiv {
+    height: 200px;
+    width: 80%;
+    position: block;
+    display: flex;
+    justify-content: center;
+  }
+  .descriptiondiv {
+    position: relative;
+    font-size: 25px;
+  }
+  .namediv {
+    position: relative;
+    font-size: 25px;
+    vertical-align: bottom;
+  }
+  .imgdiv {
+    position: relative;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  .saertodiv {
+    height: 200px;
+    width: 80%;
+    position: block;
+    display: flex;
+    justify-content: center;
+  }
+  .descriptiondiv {
+    position: relative;
+    font-size: 16px;
+    display: none;
+  }
+  .namediv {
+    position: relative;
+    font-size: 35px;
+    vertical-align: bottom;
+  }
+  .imgdiv {
+    position: relative;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 543px) {
+  .saertodiv {
+    height: 200px;
+    width: 80%;
+    position: block;
+    display: flex;
+    justify-content: center;
+  }
+  .descriptiondiv {
+    position: relative;
+    font-size: 16px;
+    display: none;
+  }
+  .namediv {
+    position: relative;
+    font-size: 25px;
+    vertical-align: bottom;
+  }
+  .imgdiv {
+    position: relative;
+    height: 100%;
+  }
+}
