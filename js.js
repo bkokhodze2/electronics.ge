@@ -158,7 +158,7 @@ function searchProduct() {
     for (let i = 0; i < Products.length; i++) {
       if (Products[i].Name.includes(input)) {
         outputPrep(i);
-        document.getElementById("searchBar").onclick = function () {
+        document.getElementById("searchBar").onclick = () => {
           location.href = "index2.html";
         };
       }
@@ -364,7 +364,7 @@ $(document).ready(function () {
   var id = []; //iyreba aidishnikebi gasafiltria masivi (Set) 
 
 
-  $('.yidva').on('click', function () {
+  $('.yidva').on('click',function() {
     raodenoba += 1;
     var tanxa = parseInt($(this).attr('value'), 10);
     var saxeli = $(this).attr('data');
@@ -415,7 +415,7 @@ $(document).ready(function () {
     //modzrav paneltan mushaoba 
   });
 
-  $('.gaukmeba1').on('click', function () {
+  $('.gaukmeba1').on('click',  () => {
     sum = 0;
     raodenoba = 0;
     while (srulitanxa.length > 0) {
@@ -445,10 +445,9 @@ $(document).ready(function () {
   });
   //---carusel---//
 
-  $('.lbl').on('click', function () {
+  $('.lbl').on('click',  () => {
   $('.lbl').toggleClass('darkmode');
   if ($('.lbl').attr('class').includes('darkmode')) {
-    
      $('body').css('background-color','black');
      $('header').css('background-color','rgb(71, 71, 71)');
      $('.shida, .dzebna, .gilaki,  .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').addClass('shidadark');
@@ -457,7 +456,6 @@ $(document).ready(function () {
      $('body').css('background-color','rgb(211, 210, 210)');
      $('header').css('background-color','silver');
      $('.shida, .dzebna , .gilaki, .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').removeClass('shidadark');
-     
    }
    
 });
@@ -465,12 +463,8 @@ $(document).ready(function () {
 });
 
 //sort
-document.querySelector('.btn-sort').onclick = function () {
-  sortList('data-fasi')
-}
-document.querySelector('.btn-sort-desc').onclick = function () {
-  sortListDesc('data-fasi');
-}
+document.querySelector('.btn-sort').onclick = () =>sortList('data-fasi');
+document.querySelector('.btn-sort-desc').onclick= ()=> sortListDesc('data-fasi');
 
 function sortList(sortType) {
   let items = document.querySelector('.yuti');
