@@ -7,7 +7,8 @@ body {
 }
 
 header{
-  background-color: rgb(122, 122, 122);
+
+  background-color:silver;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -168,7 +169,7 @@ tr:nth-child(even) {
   flex-grow: 1;
   flex-basis: 250px;
   position: relative;
-  box-shadow:0 0px 40px 20px rgb(0, 0, 0);
+  box-shadow:0 0px 40px 10px rgb(0, 0, 0);
   transition: .5s;
   display: flex;
   flex-direction: column;
@@ -214,18 +215,23 @@ tr:nth-child(even) {
   margin:0 auto;
   min-width: 60%;
   border-radius: 25px;
-  border:1.5px solid rgb(48, 47, 47);
-  
+  border:1.5px solid rgb(54, 54, 54);
+  background-color: rgba(54, 54, 54, 0);
   color:rgb(0, 0, 0);
+  
   font-weight: bold;
-  transition: 0.8s;
+  transition: 0.6s;
   order:4;
+  bottom:0px;
 
 }
 .yidva:hover{
-  border:1.5px solid transparent;
+  
   border-radius: 0px;
-  min-width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  
+  min-width: 101%;
   box-shadow:0px 20px 30px 7px rgb(0, 0, 0);
 }
 
@@ -233,8 +239,7 @@ tr:nth-child(even) {
   font-size: 24px;
   position: absolute;
   border-radius: 25px;
-  border:3px solid blue;
-  background-color: red;
+  border:1.5px solid black;
   color:rgb(0, 0, 0);
   font-weight: bold;
   transition: 0.8s;
@@ -250,7 +255,6 @@ tr:nth-child(even) {
 .tanxa:hover{
  color:black;
  text-decoration: none;
- 
 }
 
 .main{
@@ -386,6 +390,8 @@ box-shadow:0px 20px 30px 7px rgb(4, 0, 255);
   transition: 0.5s;
   font-size: 20px;
   font-weight: 600;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .nav-item:last-child{
@@ -511,6 +517,66 @@ color:black;
 .zemot{
   top:-250px;
 }
+
+.lbl {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 44px;
+    background: #898989;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin:0 auto;
+  }
+   
+  .lbl:after {
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+    background: #fff;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+    content: 'off';
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  .lbl:active:after {
+     transform: scale(1.15, 0.85);
+     }
+  .cbx:checked ~ label {
+     background: #525151;
+     }
+  .cbx:checked ~ label:after {
+    color: white;
+    text-align: center;
+    content: "on";
+    left: 20px;
+    background: #ff0000;
+  }
+  .cbx:disabled ~ label {
+    background: #d5d5d5;
+    pointer-events: none;
+  }
+  .cbx:disabled ~ label:after {
+     background: #bcbdbc; 
+    }
+  .hidden { 
+    display: none; 
+  }
+
+.shidadark{
+  color:rgb(177, 175, 175);
+  background-color: #525151;
+  box-shadow:0 0px 40px 10px rgb(99, 98, 98);
+}
+.shidadark:hover{
+  box-shadow:0 0px 40px 10px rgb(156, 156, 156);
+}
+
 @media screen and (max-width: 616px) {
   .white {
     font-size: 15px;

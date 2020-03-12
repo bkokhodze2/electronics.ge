@@ -175,7 +175,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[0].Name + '</h5>' +
     ' <p class="card-text">' + Products[0].Description + '</p> ' +
-    '<a href="#"  value="' + Products[0].Price + '"  class=" tanxa ">შეიძინე ' + Products[0].Price + ' ლარად!' + '</a>' +
+    '<a value="' + Products[0].Price + '"  class=" tanxa yidva">შეიძინე ' + Products[0].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div  class="card" style="width: 18rem;">' +
@@ -183,7 +183,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[1].Name + '</h5>' +
     ' <p class="card-text">' + Products[1].Description + '</p> ' +
-    '<a href="#"  value="' + Products[1].Price + '"  class="tanxa">შეიძინე ' + Products[1].Price + ' ლარად!' + '</a>' +
+    '<a   value="' + Products[1].Price + '"  class="tanxa yidva ">შეიძინე ' + Products[1].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -191,7 +191,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[2].Name + '</h5>' +
     ' <p class="card-text">' + Products[2].Description + '</p> ' +
-    '<a href="#"  value="' + Products[2].Price + '" class="tanxa">შეიძინე ' + Products[2].Price + ' ლარად!' + '</a>' +
+    '<a   value="' + Products[2].Price + '" class="tanxa yidva">შეიძინე ' + Products[2].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -199,7 +199,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[3].Name + '</h5>' +
     ' <p class="card-text">' + Products[3].Description + '</p> ' +
-    '<a href="#"  value="' + Products[3].Price + '" class="tanxa">შეიძინე ' + Products[3].Price + ' ლარად!' + '</a>' +
+    '<a   value="' + Products[3].Price + '" class="tanxa yidva">შეიძინე ' + Products[3].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -207,7 +207,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[4].Name + '</h5>' +
     ' <p class="card-text">' + Products[4].Description + '</p> ' +
-    '<a href="#"  value="' + Products[4].Price + '" class="tanxa">შეიძინე ' + Products[4].Price + ' ლარად!' + '</a>' +
+    '<a   value="' + Products[4].Price + '" class="tanxa yidva">შეიძინე ' + Products[4].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -215,7 +215,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[5].Name + '</h5>' +
     ' <p class="card-text">' + Products[5].Description + '</p> ' +
-    '<a href="#"  value="' + Products[5].Price + '" class="tanxa">შეიძინე ' + Products[5].Price + ' ლარად!' + '</a>' +
+    '<a   value="' + Products[5].Price + '" class="tanxa yidva">შეიძინე ' + Products[5].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -223,7 +223,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[6].Name + '</h5>' +
     ' <p class="card-text">' + Products[6].Description + '</p> ' +
-    '<a href="#"  value="' + Products[6].Price + '" class="tanxa">შეიძინე ' + Products[6].Price + ' ლარად!' + '</a>' +
+    '<a   value="' + Products[6].Price + '" class="tanxa yidva">შეიძინე ' + Products[6].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -231,7 +231,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[7].Name + '</h5>' +
     ' <p class="card-text">' + Products[7].Description + '</p> ' +
-    '<a href="#"  value="' + Products[7].Price + '" class="tanxa">შეიძინე ' + Products[7].Price + ' ლარად!' + '</a>' +
+    '<a  value="' + Products[7].Price + '" class="tanxa yidva">შეიძინე ' + Products[7].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -239,7 +239,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[8].Name + '</h5>' +
     ' <p class="card-text">' + Products[8].Description + '</p> ' +
-    '<a href="#"  value="' + Products[8].Price + '" class="tanxa">შეიძინე ' + Products[8].Price + ' ლარად!' + '</a>' +
+    '<a   value="' + Products[8].Price + '" class="tanxa yidva">შეიძინე ' + Products[8].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -247,7 +247,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[9].Name + '</h5>' +
     ' <p class="card-text">' + Products[9].Description + '</p> ' +
-    '<a href="#"  value="' + Products[9].Price + '" class="tanxa">შეიძინე ' + Products[9].Price + ' ლარად!' + '</a>' +
+    '<a   value="' + Products[9].Price + '" class="tanxa yidva">შეიძინე ' + Products[9].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -255,7 +255,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[10].Name + '</h5>' +
     ' <p class="card-text">' + Products[10].Description + '</p> ' +
-    '<a href="#"  value="' + Products[10].Price + '" class="tanxa">შეიძინე ' + Products[10].Price + ' ლარად!' + '</a>' +
+    '<a  value="' + Products[10].Price + '" class="tanxa yidva">შეიძინე ' + Products[10].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -263,7 +263,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[11].Name + '</h5>' +
     ' <p class="card-text">' + Products[11].Description + '</p> ' +
-    '<a href="#"  value="' + Products[11].Price + '" class="tanxa">შეიძინე ' + Products[11].Price + ' ლარად!' + '</a>' +
+    '<a   value="' + Products[11].Price + '" class="tanxa yidva">შეიძინე ' + Products[11].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -271,7 +271,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[12].Name + '</h5>' +
     ' <p class="card-text">' + Products[12].Description + '</p> ' +
-    '<a href="#"  value="' + Products[12].Price + '" class="tanxa">შეიძინე ' + Products[12].Price + ' ლარად!' + '</a>' +
+    '<a  value="' + Products[12].Price + '" class="tanxa yidva">შეიძინე ' + Products[12].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -279,7 +279,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[13].Name + '</h5>' +
     ' <p class="card-text">' + Products[13].Description + '</p> ' +
-    '<a href="#"  value="' + Products[13].Price + '" class="tanxa">შეიძინე ' + Products[13].Price + ' ლარად!' + '</a>' +
+    '<a   value="' + Products[13].Price + '" class="tanxa yidva">შეიძინე ' + Products[13].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -287,7 +287,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[14].Name + '</h5>' +
     ' <p class="card-text">' + Products[14].Description + '</p> ' +
-    '<a href="#"  value="' + Products[14].Price + '" class="tanxa">შეიძინე ' + Products[14].Price + ' ლარად!' + '</a>' +
+    '<a  value="' + Products[14].Price + '" class="tanxa yidva">შეიძინე ' + Products[14].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -295,7 +295,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[15].Name + '</h5>' +
     ' <p class="card-text">' + Products[15].Description + '</p> ' +
-    '<a href="#"  value="' + Products[15].Price + '" class="tanxa">შეიძინე ' + Products[15].Price + ' ლარად!' + '</a>' +
+    '<a  value="' + Products[15].Price + '" class="tanxa yidva">შეიძინე ' + Products[15].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -303,7 +303,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[16].Name + '</h5>' +
     ' <p class="card-text">' + Products[16].Description + '</p> ' +
-    '<a href="#"  value="' + Products[16].Price + '" class="tanxa">შეიძინე ' + Products[16].Price + ' ლარად!' + '</a>' +
+    '<a  value="' + Products[16].Price + '" class="tanxa yidva">შეიძინე ' + Products[16].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -311,7 +311,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[17].Name + '</h5>' +
     ' <p class="card-text">' + Products[17].Description + '</p> ' +
-    '<a href="#"  value="' + Products[17].Price + '" class="tanxa">შეიძინე ' + Products[17].Price + ' ლარად!' + '</a>' +
+    '<a   value="' + Products[17].Price + '" class="tanxa yidva">შეიძინე ' + Products[17].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -319,7 +319,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[18].Name + '</h5>' +
     ' <p class="card-text">' + Products[18].Description + '</p> ' +
-    '<a href="#"  value="' + Products[18].Price + '" class="tanxa">შეიძინე ' + Products[18].Price + ' ლარად!' + '</a>' +
+    '<a   value="' + Products[18].Price + '" class="tanxa yidva">შეიძინე ' + Products[18].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -327,7 +327,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[19].Name + '</h5>' +
     ' <p class="card-text">' + Products[19].Description + '</p> ' +
-    '<a href="#"  value="' + Products[19].Price + '" class="tanxa">შეიძინე ' + Products[19].Price + ' ლარად!' + '</a>' +
+    '<a   value="' + Products[19].Price + '" class="tanxa yidva">შეიძინე ' + Products[19].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>' +
     ' <div class="card" style="width: 18rem;">' +
@@ -335,7 +335,7 @@ $(document).ready(function () {
     '<div class="card-body">' +
     ' <h5 class="card-title">' + Products[20].Name + '</h5>' +
     ' <p class="card-text">' + Products[20].Description + '</p> ' +
-    '<a href="#"  value="' + Products[20].Price + '" class="tanxa">შეიძინე ' + Products[20].Price + ' ლარად!' + '</a>' +
+    '<a   value="' + Products[20].Price + '" class="tanxa yidva">შეიძინე ' + Products[20].Price + ' ლარად!' + '</a>' +
     '</div>' +
     '</div>'
   )
@@ -444,6 +444,22 @@ $(document).ready(function () {
     pauseOnHover: true,
   });
   //---carusel---//
+
+  $('.lbl').on('click', function () {
+  $('.lbl').toggleClass('darkmode');
+  if ($('.lbl').attr('class').includes('darkmode')) {
+    
+     $('body').css('background-color','black');
+     $('header').css('background-color','rgb(71, 71, 71)');
+     $('.shida, .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').addClass('shidadark');
+  } else{
+     $('body').css('background-color','rgb(211, 210, 210)');
+     $('header').css('background-color','silver');
+     $('.shida, .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').removeClass('shidadark');
+   }
+   
+});
+  
 });
 
 //sort
