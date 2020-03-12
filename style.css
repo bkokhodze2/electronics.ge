@@ -1,10 +1,19 @@
 body {
-  background-image: url("images/ss.jpg");
+  background-color: rgb(211, 210, 210);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
 }
+
+header{
+  background-color: rgb(122, 122, 122);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
 
 table {
   font-family: arial, sans-serif;
@@ -28,15 +37,7 @@ td{
   justify-content: center;
 
 }
-.gaukmeba{
 
-  border: none;
-  min-width: auto;
-  padding:2px;
-  color:red;
-  background-color: black;
-  cursor: pointer;
-}
 .safasuri{
   min-width: 80px;
  
@@ -92,21 +93,8 @@ tr:nth-child(even) {
 
 }
 
-.white {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-}
 
-.fb {
-  color: rgba(0, 0, 0, 0.678);
-  text-decoration: none;
-  width: px;
-}
 
-.fb:hover {
-  color: rgba(0, 0, 0, 0.678);
-  text-decoration: none;
-}
 .search {
   position: block;
   display: flex;
@@ -115,11 +103,6 @@ tr:nth-child(even) {
 }
 
 
-
-#knopka{
-  position: relative;
-  margin:0 auto;
-}
 
 .saertodiv {
   border: 3px solid black;
@@ -171,28 +154,9 @@ tr:nth-child(even) {
   width: 110px;
   position: relative;
 }
-.name {
-  font-size: 1px;
-  opacity: 0;
-}
-.media{
-  margin: 0 auto;
-}
-.select{
-  display: flex;
-  justify-content: center;
-  font-size: 20px;
-  width: 200px;
- text-align: center;
- position: absolute;
-}
-.option{
-  font-size: 20px;
-}
 
 .yuti{
   order: 1;
-  
   display: flex;
   flex-wrap: wrap;
   position: relative;
@@ -204,17 +168,18 @@ tr:nth-child(even) {
   flex-grow: 1;
   flex-basis: 250px;
   position: relative;
-  box-shadow:0 0px 40px 10px rgb(255, 0, 0);
-  transition: 0.5s;
+  box-shadow:0 0px 40px 20px rgb(0, 0, 0);
+  transition: .5s;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border:1px solid black;
   
 }
 .shida:hover{
-  transform: scale(1.1);
-  
-  box-shadow:0px 0px 40px 20px rgb(76, 0, 255);
+  border:1px solid black;
+  transform: scale(1.25);
+  box-shadow:0px 0px 40px 5px rgb(255, 0, 0);
 }
 
 .brendi{
@@ -222,6 +187,7 @@ tr:nth-child(even) {
   display: flex;
   justify-content: center;
   order:2;
+  text-align: center;
 }
 .picture{
   position: relative;
@@ -248,8 +214,8 @@ tr:nth-child(even) {
   margin:0 auto;
   min-width: 60%;
   border-radius: 25px;
-  border:3px solid blue;
-  background-color: red;
+  border:1.5px solid rgb(48, 47, 47);
+  
   color:rgb(0, 0, 0);
   font-weight: bold;
   transition: 0.8s;
@@ -257,11 +223,10 @@ tr:nth-child(even) {
 
 }
 .yidva:hover{
-  border:3px solid transparent;
-  color:white;
+  border:1.5px solid transparent;
   border-radius: 0px;
   min-width: 100%;
-  box-shadow:0px 20px 30px 7px rgb(4, 0, 255);
+  box-shadow:0px 20px 30px 7px rgb(0, 0, 0);
 }
 
 .tanxa{
@@ -305,11 +270,11 @@ tr:nth-child(even) {
  height: 510px;
  width: auto;
   position: relative;
-  background-image: linear-gradient(to top, rgba(255, 0, 0, 0.219), rgba(255,0,0,1));
   border-radius: 15px;
   border:2px solid black;
   display: flex;
   justify-content: space-between;
+  background-color: #dddddd;
   
 }
 .card-body{
@@ -475,6 +440,13 @@ color:black;
   transition: 2s;
   right: -100px;
   text-align: center;
+  color: #000000;
+  border:1px solid rgb(0, 0, 0)
+}
+
+
+.kalata a{
+  color:black;
 }
 
 .kalata2{
@@ -496,6 +468,10 @@ color:black;
   transition: 2s;
   right: -190px;
   text-align: center;
+  border:1px solid rgb(0, 0, 0)
+}
+.kalatasul a{
+  color:black;
 }
 
 .kalatasul2{
@@ -516,10 +492,11 @@ color:black;
   right: -490px;
   border-radius: 20px;
   transition: all 2s ease 0s;
+  border:1px solid rgb(255, 0, 0)
 }
 
 .gaukmeba2 {
-  color: red;
+  color: rgb(77, 41, 41);
   font-size: 30px;
   right: 10px;
   width: 40px;
