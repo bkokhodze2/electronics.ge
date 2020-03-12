@@ -433,7 +433,7 @@ $(document).ready(function () {
 
   //---carusel---//
   $('.carusel').slick({
-    dots: false,
+    dots: true,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 1000,
