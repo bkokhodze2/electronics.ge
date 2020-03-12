@@ -5,7 +5,7 @@ body {
   background-size: cover;
   background-position: center;
 }
-/* d */
+
 header{
   background-color:silver;
   background-repeat: no-repeat;
@@ -517,6 +517,7 @@ color:black;
   top:-250px;
 }
 
+
 .lbl {
     position: relative;
     display: block;
@@ -537,24 +538,26 @@ color:black;
     width: 26px;
     height: 26px;
     border-radius: 100px;
-    background: #fff;
+    background: rgb(255, 0, 0);
     box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
     content: 'off';
     text-align: center;
     transition: all 0.3s ease;
+    font-weight: 100;
   }
   .lbl:active:after {
      transform: scale(1.15, 0.85);
      }
   .cbx:checked ~ label {
-     background: #525151;
+     background: #818080;
      }
   .cbx:checked ~ label:after {
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
     content: "on";
     left: 20px;
-    background: #ff0000;
+    background: #ffffff;
+    font-weight: 200;
   }
   .cbx:disabled ~ label {
     background: #d5d5d5;
@@ -568,7 +571,7 @@ color:black;
   }
 
 .shidadark{
-  color:rgb(177, 175, 175);
+  color:rgb(192, 192, 192);
   background-color: #525151;
   box-shadow:0 0px 40px 10px rgb(99, 98, 98);
 }
@@ -576,15 +579,12 @@ color:black;
   box-shadow:0 0px 40px 10px rgb(156, 156, 156);
 }
 
+
+
 @media screen and (max-width: 616px) {
-  .white {
-    font-size: 15px;
-  }
+  
   .short {
     font-size: 14px;
-  }
-  .bakuri {
-    left: 0px;
   }
 
   .carusel{
@@ -593,13 +593,7 @@ color:black;
 }
 
 @media screen and (max-width: 700px) {
-  .name {
-    opacity: 1;
-    font-size: 40px;
-    margin-top: 25px;
-    margin-left: 20px;
-    color: white;
-  }
+  
   .image {
     position: absolute;
     right: 0px;
@@ -611,9 +605,7 @@ color:black;
     justify-content: space-between;
   }
   
-  .bakuri {
-    display: none;
-  }
+  
 }
 
 @media screen and (max-width:991px){

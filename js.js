@@ -451,11 +451,13 @@ $(document).ready(function () {
     
      $('body').css('background-color','black');
      $('header').css('background-color','rgb(71, 71, 71)');
-     $('.shida, .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').addClass('shidadark');
+     $('.shida, .dzebna, .gilaki,  .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').addClass('shidadark');
+     
   } else{
      $('body').css('background-color','rgb(211, 210, 210)');
      $('header').css('background-color','silver');
-     $('.shida, .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').removeClass('shidadark');
+     $('.shida, .dzebna , .gilaki, .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').removeClass('shidadark');
+     
    }
    
 });
