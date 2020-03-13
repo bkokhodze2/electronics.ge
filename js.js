@@ -385,7 +385,7 @@ $(document).ready(function () {
     }
     //jamis masivtan mushaoba
 
-
+    //modzrav paneltan mushaoba 
     $(this).toggleClass('class');
     if ($(this).attr('class').includes('class')) {
       $(this).text('გაუქმება');
@@ -405,16 +405,14 @@ $(document).ready(function () {
       sum = srulitanxa.reduce((a, b) => a + b);
     }
 
-    //modzrav paneltan mushaoba 
+    
     $('.aq').text('კალათში ' + raodenoba + ' ნივთია');
     $('.aqsul').text('ჯამში ' + sum + ' ლარი');
     $('.kalata').addClass('kalata2');
     $('.gaukmeba1').text('X');
     $('.kalatasul').addClass('kalatasul2');
     $('.gaukmeba1').addClass('gaukmeba2');
-    //modzrav paneltan mushaoba 
   });
-
   $('.gaukmeba1').on('click',  () => {
     sum = 0;
     raodenoba = 0;
@@ -429,7 +427,7 @@ $(document).ready(function () {
     $('.gaukmeba1').addClass('zemot');
     $('.gaukmeba1').text('ok');
   });
-
+  //modzrav paneltan mushaoba 
 
   //---carusel---//
   $('.carusel').slick({
@@ -445,11 +443,11 @@ $(document).ready(function () {
   });
   //---carusel---//
 
+  //darkmode//
   $('.lbl').on('click',  () => {
   $('.lbl').toggleClass('darkmode');
   if ($('.lbl').attr('class').includes('darkmode')) {
-
-    $('.shida, .yidva, .dzebna, .gilaki,  .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').addClass('shidadark');
+     $('.shida, .yidva, .dzebna, .gilaki,  .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').addClass('shidadark');
      $('body').css('background-color','black');
      $('header').css('background-color','rgb(61, 61, 61)');
      $('.kalatasul > a').css('color','rgb(192, 192, 192)');
@@ -457,8 +455,7 @@ $(document).ready(function () {
      $('.kalata > a, .card-title, .card-text').css('color','rgb(192, 192, 192)');
      $('.navbar-light, .nav-item, .navbar-brand, .navbar-nav, .nav-link').css({'color':'rgb(192, 192, 192)','border-color':'rgb(192, 192, 192)'});
   } else{
-
-    $('.shida,  .yidva, .dzebna, .gilaki, .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').removeClass('shidadark');
+     $('.shida,  .yidva, .dzebna, .gilaki, .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').removeClass('shidadark');
      $('body').css('background-color','rgb(211, 210, 210)');
      $('header').css('background-color','silver');
      $('.kalatasul > a').css('color','black');
@@ -468,6 +465,7 @@ $(document).ready(function () {
    }
    
   });
+  //darkmode//
   
 });
 

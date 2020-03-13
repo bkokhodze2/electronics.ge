@@ -101,6 +101,8 @@ tr:nth-child(even) {
   display: flex;
   margin-top: 20px;
   justify-content: center;
+  width: auto;
+
 }
 
 
@@ -343,7 +345,7 @@ box-shadow:0px 20px 30px 7px rgb(4, 0, 255);
 }
 .dzebna{
   height: 35px;
- transition: 1s;
+  transition: 1s;
   color: rgb(255, 255, 255);
   font-size: 20px;
   border: 1.5px solid rgb(0, 0, 0);
@@ -353,7 +355,7 @@ box-shadow:0px 20px 30px 7px rgb(4, 0, 255);
 }
 
 #inputName{
-  min-width: 30%;
+  width: 170px;
 }
 .navbar-toggler{
   margin:0 auto;
@@ -362,11 +364,13 @@ box-shadow:0px 20px 30px 7px rgb(4, 0, 255);
 
 .gilaki{
   height: 35px;
+  width: 60px;
   background-color: #fff;
   color:rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 16px;
   border: 1.5px solid rgb(0, 0, 0);
-  padding-top: 1px;
+  padding-top: 3px;
+  font-weight: 600;
 }
 .gilaki:hover{
   color:black;
@@ -374,11 +378,12 @@ box-shadow:0px 20px 30px 7px rgb(4, 0, 255);
   
 }
 .navbar{
+  display: flex;
+  justify-content: space-between;
   box-shadow:0 10px 50px 5px rgb(252, 252, 252);
 
 }
 .navbar-brand{
- 
  font-size: 30px;
 }
 
@@ -389,12 +394,21 @@ box-shadow:0px 20px 30px 7px rgb(4, 0, 255);
   font-size: 20px;
   font-weight: 600;
   text-align: center;
-  vertical-align: middle;
+  align-self: center;
+
 }
 
 .nav-item:last-child{
   border-right:none;
 }
+.nav-link{
+  color:red;
+  vertical-align: middle;
+  text-align: center;
+  align-self: center;
+  text-align: center;
+}
+
 .nav-link:last-child{
   border-right: none;
 }
@@ -406,13 +420,7 @@ color:rgb(0, 0, 0);
 }
 .nav-item:hover {
   font-size: 20px;
-  
 }
-.modzravi:hover{
-  transition: 0.5s;
-  transform:translateY(-5px);
-}
-
 
 .navbar-brand{
   padding-right: 10px;
@@ -572,6 +580,9 @@ color:rgb(0, 0, 0);
   }
 .darkbold{
   font-weight: 200;
+  margin-left: 5px;
+  padding-right: 5px;
+  
 }
 
 .shidadark{
@@ -641,6 +652,7 @@ color:rgb(0, 0, 0);
   .search{
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .navbar-brand{
     border:none;
