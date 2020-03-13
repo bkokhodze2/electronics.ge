@@ -381,7 +381,7 @@ $(document).ready(function () {
           delete srulitanxa[b];
           delete srulitanxa[s];
         }
-      } console.log(srulitanxa);
+      }
     }
     //jamis masivtan mushaoba
 
@@ -448,17 +448,24 @@ $(document).ready(function () {
   $('.lbl').on('click',  () => {
   $('.lbl').toggleClass('darkmode');
   if ($('.lbl').attr('class').includes('darkmode')) {
+
+    $('.shida, .yidva, .dzebna, .gilaki,  .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').addClass('shidadark');
      $('body').css('background-color','black');
-     $('header').css('background-color','rgb(71, 71, 71)');
-     $('.shida, .dzebna, .gilaki,  .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').addClass('shidadark');
-     
+     $('header').css('background-color','rgb(61, 61, 61)');
+     $('.kalatasul > a').css('color','rgb(192, 192, 192)');
+     $('.kalata > a, .card-title, .card-text').css('color','rgb(192, 192, 192)');
+     $('.navbar-light, .nav-item, .navbar-brand, .navbar-nav, .nav-link').css({'color':'rgb(192, 192, 192)','border-color':'rgb(192, 192, 192)'});
   } else{
+
+    $('.shida,  .yidva, .dzebna, .gilaki, .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').removeClass('shidadark');
      $('body').css('background-color','rgb(211, 210, 210)');
      $('header').css('background-color','silver');
-     $('.shida, .dzebna , .gilaki, .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').removeClass('shidadark');
+     $('.kalatasul > a').css('color','black');
+     $('.kalata > a,.card-title, .card-text').css('color','black');
+     $('.navbar-light, .nav-item, .navbar-brand, .navbar-nav, .nav-link').css({'color':'black','border-color':'black'});
    }
    
-});
+  });
   
 });
 

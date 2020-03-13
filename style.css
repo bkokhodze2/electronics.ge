@@ -58,6 +58,7 @@ tr:nth-child(even) {
 
 .card-text {
   color: white;
+  text-align: center;
 }
 
 .card-title {
@@ -174,6 +175,7 @@ tr:nth-child(even) {
   flex-direction: column;
   justify-content: space-between;
   border:1px solid black;
+  overflow: hidden;
   
 }
 .shida:hover{
@@ -225,12 +227,8 @@ tr:nth-child(even) {
 
 }
 .yidva:hover{
-  
   border-radius: 0px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  
-  min-width: 101%;
+  min-width: 100%;
   box-shadow:0px 20px 30px 7px rgb(0, 0, 0);
 }
 
@@ -385,7 +383,7 @@ box-shadow:0px 20px 30px 7px rgb(4, 0, 255);
 
 
 .nav-item{
-  border-right: 1px solid black;
+  border-right: 1px solid rgb(0, 0, 0);
   transition: 0.5s;
   font-size: 20px;
   font-weight: 600;
@@ -400,7 +398,7 @@ box-shadow:0px 20px 30px 7px rgb(4, 0, 255);
   border-right: none;
 }
 .navbar-light .navbar-nav .nav-link {
-color:black;
+color:rgb(0, 0, 0);
 }
 .navbar-light .navbar-nav .nav-link:hover{
   color:black;
@@ -463,6 +461,7 @@ color:black;
  cursor: pointer;
  max-width: auto; 
  height: auto; 
+ 
 }
 .kalatasul{
   position:fixed;
@@ -476,7 +475,7 @@ color:black;
   border:1px solid rgb(0, 0, 0)
 }
 .kalatasul a{
-  color:black;
+  color:rgb(0, 0, 0);
 }
 
 .kalatasul2{
@@ -572,13 +571,14 @@ color:black;
 
 .shidadark{
   color:rgb(192, 192, 192);
-  background-color: #525151;
+  background-color: #222222;
   box-shadow:0 0px 40px 10px rgb(99, 98, 98);
+  border:1px solid rgb(192, 192, 192);
 }
 .shidadark:hover{
   box-shadow:0 0px 40px 10px rgb(156, 156, 156);
+  border:1px solid rgb(192, 192, 192);
 }
-
 
 
 @media screen and (max-width: 616px) {
