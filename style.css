@@ -50,7 +50,7 @@ tr:nth-child(even) {
 * {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: cursive;
 }
 
 
@@ -165,11 +165,11 @@ tr:nth-child(even) {
 }
 .shida{
   border-radius: 10px;
-  margin:40px 39px;
+  margin:10px 30px 30px 30px;
   flex-grow: 1;
   flex-basis: 250px;
   position: relative;
-  box-shadow:0 0px 40px 10px rgb(0, 0, 0);
+  box-shadow:0 0px 20px 10px rgb(0, 0, 0);
   transition: .5s;
   display: flex;
   flex-direction: column;
@@ -179,9 +179,9 @@ tr:nth-child(even) {
   
 }
 .shida:hover{
-  border:1px solid black;
-  transform: scale(1.25);
-  box-shadow:0px 0px 40px 5px rgb(255, 0, 0);
+  border:1px solid rgb(247, 0, 0);
+  transform:scale(1.25);
+  box-shadow:0px 0px 10px 10px rgb(236, 92, 92);
 }
 
 .brendi{
@@ -375,6 +375,7 @@ box-shadow:0px 20px 30px 7px rgb(4, 0, 255);
 }
 .navbar{
   box-shadow:0 10px 50px 5px rgb(252, 252, 252);
+
 }
 .navbar-brand{
  
@@ -540,6 +541,7 @@ color:rgb(0, 0, 0);
     background: rgb(255, 0, 0);
     box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
     content: 'off';
+    font-size: 15px;
     text-align: center;
     transition: all 0.3s ease;
     font-weight: 100;
@@ -568,15 +570,18 @@ color:rgb(0, 0, 0);
   .hidden { 
     display: none; 
   }
+.darkbold{
+  font-weight: 200;
+}
 
 .shidadark{
   color:rgb(192, 192, 192);
   background-color: #222222;
-  box-shadow:0 0px 40px 10px rgb(99, 98, 98);
+  box-shadow:0px 0px 20px 5px rgb(119, 118, 118);
   border:1px solid rgb(192, 192, 192);
 }
 .shidadark:hover{
-  box-shadow:0 0px 40px 10px rgb(156, 156, 156);
+  box-shadow:0px 0px 20px 10px rgb(156, 156, 156);
   border:1px solid rgb(192, 192, 192);
 }
 

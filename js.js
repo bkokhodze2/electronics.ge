@@ -453,6 +453,7 @@ $(document).ready(function () {
      $('body').css('background-color','black');
      $('header').css('background-color','rgb(61, 61, 61)');
      $('.kalatasul > a').css('color','rgb(192, 192, 192)');
+     $('.navbar').css('box-shadow','none');
      $('.kalata > a, .card-title, .card-text').css('color','rgb(192, 192, 192)');
      $('.navbar-light, .nav-item, .navbar-brand, .navbar-nav, .nav-link').css({'color':'rgb(192, 192, 192)','border-color':'rgb(192, 192, 192)'});
   } else{
@@ -461,6 +462,7 @@ $(document).ready(function () {
      $('body').css('background-color','rgb(211, 210, 210)');
      $('header').css('background-color','silver');
      $('.kalatasul > a').css('color','black');
+     $('.navbar').css('box-shadow','0 10px 50px 5px rgb(252, 252, 252);');
      $('.kalata > a,.card-title, .card-text').css('color','black');
      $('.navbar-light, .nav-item, .navbar-brand, .navbar-nav, .nav-link').css({'color':'black','border-color':'black'});
    }
