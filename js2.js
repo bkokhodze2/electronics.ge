@@ -1,1 +1,0 @@
-document.getElementById("kaxa").innerHTML = localStorage.getItem("savedInput");

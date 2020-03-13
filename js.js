@@ -138,29 +138,34 @@ Products[20] = new Electornic(
 );
 
 function outputPrep(i) {
-  inputVar = inputVar + "<div class = \"saertodiv\">";
-  inputVar = inputVar + "<p class=\"namediv b\">" + Products[i].Name + "</p>";
-  inputVar = inputVar + "<p class=\"descriptiondiv b\">" + Products[i].Description + "</p>";
-  inputVar = inputVar + "<p class=\"pricediv b\">" + Products[i].Price + "</p>";
-  inputVar = inputVar + "<img class = \"imgdiv\" src = \"" + Products[i].URLimage + "\">";
-  inputVar = inputVar + "</div>";
-  localStorage.setItem("savedInput", inputVar);
+  inputVar = inputVar + '<div data-aos="fade-up" class="shida" data-fasi="' + Products[i].Price + '"  >';
+  inputVar = inputVar + '<div  class="brendi">' + Products[i].Name + '</div>';
+  inputVar = inputVar + '<img class="picture" src="' + Products[i].URLimage + '" alt="picture">';
+  inputVar = inputVar + '<p  class="fasi">' + Products[i].Price + ' ლარი' + '</p>';
+  inputVar = inputVar + '<button data="' + Products[i].Name + '" value="' + Products[i].Price + '" class="yidva"  id="' + [i] + '">შეძენა</button>';
+  inputVar = inputVar + '</div>';
+
 }
+
 
 function searchProduct() {
   inputVar = "";
 
   if (document.getElementById("inputName").value.length == 0) {
+
     alert("გთხოვთ ჩაწეროთ პროდუქციის სახელი");
   } else {
-    let input = document.getElementById("inputName").value;
 
+    let input = document.getElementById("inputName").value;
     for (let i = 0; i < Products.length; i++) {
       if (Products[i].Name.includes(input)) {
+        
         outputPrep(i);
         document.getElementById("searchBar").onclick = () => {
-          location.href = "index2.html";
-        };
+          $('.napovni').empty();
+          $('.napovni').append(inputVar);
+
+        }
       }
     }
   }
@@ -364,7 +369,7 @@ $(document).ready(function () {
   var id = []; //iyreba aidishnikebi gasafiltria masivi (Set) 
 
 
-  $('.yidva').on('click',function() {
+  $('.yidva').on('click', function () {
     raodenoba += 1;
     var tanxa = parseInt($(this).attr('value'), 10);
     var saxeli = $(this).attr('data');
@@ -405,7 +410,7 @@ $(document).ready(function () {
       sum = srulitanxa.reduce((a, b) => a + b);
     }
 
-    
+
     $('.aq').text('კალათში ' + raodenoba + ' ნივთია');
     $('.aqsul').text('ჯამში ' + sum + ' ლარი');
     $('.kalata').addClass('kalata2');
@@ -413,7 +418,7 @@ $(document).ready(function () {
     $('.kalatasul').addClass('kalatasul2');
     $('.gaukmeba1').addClass('gaukmeba2');
   });
-  $('.gaukmeba1').on('click',  () => {
+  $('.gaukmeba1').on('click', () => {
     sum = 0;
     raodenoba = 0;
     while (srulitanxa.length > 0) {
@@ -444,34 +449,34 @@ $(document).ready(function () {
   //---carusel---//
 
   //darkmode//
-  $('.lbl').on('click',  () => {
-  $('.lbl').toggleClass('darkmode');
-  if ($('.lbl').attr('class').includes('darkmode')) {
-     $('.shida, .yidva, .dzebna, .gilaki,  .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').addClass('shidadark');
-     $('body').css('background-color','black');
-     $('header').css('background-color','rgb(61, 61, 61)');
-     $('.kalatasul > a').css('color','rgb(192, 192, 192)');
-     $('.navbar').css('box-shadow','none');
-     $('.kalata > a, .card-title, .card-text').css('color','rgb(192, 192, 192)');
-     $('.navbar-light, .nav-item, .navbar-brand, .navbar-nav, .nav-link').css({'color':'rgb(192, 192, 192)','border-color':'rgb(192, 192, 192)'});
-  } else{
-     $('.shida,  .yidva, .dzebna, .gilaki, .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').removeClass('shidadark');
-     $('body').css('background-color','rgb(211, 210, 210)');
-     $('header').css('background-color','silver');
-     $('.kalatasul > a').css('color','black');
-     $('.navbar').css('box-shadow','0 10px 50px 5px rgb(252, 252, 252);');
-     $('.kalata > a,.card-title, .card-text').css('color','black');
-     $('.navbar-light, .nav-item, .navbar-brand, .navbar-nav, .nav-link').css({'color':'black','border-color':'black'});
-   }
-   
+  $('.lbl').on('click', () => {
+    $('.lbl').toggleClass('darkmode');
+    if ($('.lbl').attr('class').includes('darkmode')) {
+      $('.shida, .yidva, .dzebna, .gilaki,  .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').addClass('shidadark');
+      $('body').css('background-color', 'black');
+      $('header').css('background-color', 'rgb(61, 61, 61)');
+      $('.kalatasul > a').css('color', 'rgb(192, 192, 192)');
+      $('.navbar').css('box-shadow', 'none');
+      $('.kalata > a, .card-title, .card-text').css('color', 'rgb(192, 192, 192)');
+      $('.navbar-light, .nav-item, .navbar-brand, .navbar-nav, .nav-link').css({ 'color': 'rgb(192, 192, 192)', 'border-color': 'rgb(192, 192, 192)' });
+    } else {
+      $('.shida,  .yidva, .dzebna, .gilaki, .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').removeClass('shidadark');
+      $('body').css('background-color', 'rgb(211, 210, 210)');
+      $('header').css('background-color', 'silver');
+      $('.kalatasul > a').css('color', 'black');
+      $('.navbar').css('box-shadow', '0 10px 50px 5px rgb(252, 252, 252);');
+      $('.kalata > a,.card-title, .card-text').css('color', 'black');
+      $('.navbar-light, .nav-item, .navbar-brand, .navbar-nav, .nav-link').css({ 'color': 'black', 'border-color': 'black' });
+    }
+
   });
   //darkmode//
-  
+
 });
 
 //sort
-document.querySelector('.btn-sort').onclick = () =>sortList('data-fasi');
-document.querySelector('.btn-sort-desc').onclick= ()=> sortListDesc('data-fasi');
+document.querySelector('.btn-sort').onclick = () => sortList('data-fasi');
+document.querySelector('.btn-sort-desc').onclick = () => sortListDesc('data-fasi');
 
 function sortList(sortType) {
   let items = document.querySelector('.yuti');

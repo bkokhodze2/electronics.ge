@@ -167,7 +167,7 @@ tr:nth-child(even) {
 }
 .shida{
   border-radius: 10px;
-  margin:10px 30px 30px 30px;
+  margin:40px 30px 30px 30px;
   flex-grow: 1;
   flex-basis: 250px;
   position: relative;
