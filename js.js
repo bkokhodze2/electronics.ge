@@ -158,13 +158,13 @@ function searchProduct() {
 
     let input = document.getElementById("inputName").value;
     for (let i = 0; i < Products.length; i++) {
-      if (Products[i].Name.includes(input)) {
-        
+      input= input.toLowerCase();
+      var name = Products[i].Name.toLowerCase();
+      if (name.includes(input)) {
         outputPrep(i);
         document.getElementById("searchBar").onclick = () => {
           $('.napovni').empty();
           $('.napovni').append(inputVar);
-
         }
       }
     }
