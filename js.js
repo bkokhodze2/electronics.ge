@@ -424,7 +424,6 @@ $(document).ready(function () {
 
 
   $('.yidva').on('click', function () {
-    alert('hello');
     raodenoba += 1;
     var tanxa = parseInt($(this).attr('value'), 10);
     var saxeli = $(this).attr('data');
