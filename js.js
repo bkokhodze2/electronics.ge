@@ -164,7 +164,61 @@ function searchProduct() {
         outputPrep(i);
         document.getElementById("searchBar").onclick = () => {
           $('.napovni').empty();
-          $('.napovni').append(inputVar);
+          $('.napovni').append(inputVar); 
+          //modzzravi paneli//
+          var raodenoba = 0;
+          var srulitanxa = [];
+          var id = []; //iyreba aidishnikebi gasafiltria masivi (Set) 
+           $('.yidva').on('click', function () {
+            raodenoba += 1;
+            var tanxa = parseInt($(this).attr('value'), 10);
+            var saxeli = $(this).attr('data');
+            sum = tanxa;
+            srulitanxa.push(tanxa);
+            sum = srulitanxa.reduce((a, b) => a + b);
+            id.push($(this).attr('id'));
+            var set = new Set(id);
+        
+            // jamis masivtan mushaoba
+            for (let b = 0; b < srulitanxa.length; b++) {
+              for (let s = 0; s < b; s++) {
+                if (srulitanxa[b] == srulitanxa[s]) {
+                  delete srulitanxa[b];
+                  delete srulitanxa[s];
+                }
+              }
+            }
+            //jamis masivtan mushaoba
+        
+            //modzrav paneltan mushaoba 
+            $(this).toggleClass('class');
+            if ($(this).attr('class').includes('class')) {
+              $(this).text('გაუქმება');
+              $('.kalata').removeClass('zemot');
+              $('.kalatasul').removeClass('zemot');
+              $('.gaukmeba1').removeClass('zemot');
+        
+            } else {
+              raodenoba -= 2;
+              $(this).text('შეძენა');
+              if (raodenoba <= 0) {
+                $('.kalata').addClass('zemot');
+                $('.kalatasul').addClass('zemot');
+                $('.gaukmeba1').addClass('zemot');
+                $('.gaukmeba1').text('ok');
+              }
+              sum = srulitanxa.reduce((a, b) => a + b);
+            }
+        
+        
+            $('.aq').text('კალათში ' + raodenoba + ' ნივთია');
+            $('.aqsul').text('ჯამში ' + sum + ' ლარი');
+            $('.kalata').addClass('kalata2');
+            $('.gaukmeba1').text('X');
+            $('.kalatasul').addClass('kalatasul2');
+            $('.gaukmeba1').addClass('gaukmeba2');
+          });
+          //modzravipaneli
         }
       }
     }
@@ -370,6 +424,7 @@ $(document).ready(function () {
 
 
   $('.yidva').on('click', function () {
+    alert('hello');
     raodenoba += 1;
     var tanxa = parseInt($(this).attr('value'), 10);
     var saxeli = $(this).attr('data');
