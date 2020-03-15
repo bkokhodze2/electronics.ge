@@ -1,4 +1,3 @@
-
 function Electornic(Name, Description, Price, URLimage) {
   this.Name = Name;
   this.Description = Description;
@@ -166,10 +165,31 @@ function searchProduct() {
           $('.napovni').empty();
           $('.napovni').append(inputVar); 
           //modzzravi paneli//
+           //iyreba archeuli aidishnikebi 
+          //darkmode bagis dafiqsva (mtavarisaiti roca darkmodze iyo da vserchavdit nivts amogdebuli nivtebs ar enicheboda dark ferebi)
+          if ($('.lbl').attr('class').includes('darkmode')) {
+            $('.shida, .yidva, .dzebna, .gilaki,  .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').addClass('shidadark');
+            $('body').css('background-color', 'black');
+            $('header').css('background-color', 'rgb(61, 61, 61)');
+            $('.kalatasul > a').css('color', 'rgb(192, 192, 192)');
+            $('.navbar').css('box-shadow', 'none');
+            $('.kalata > a, .card-title, .card-text').css('color', 'rgb(192, 192, 192)');
+            $('.navbar-light, .nav-item, .navbar-brand, .navbar-nav, .nav-link').css({ 'color': 'rgb(192, 192, 192)', 'border-color': 'rgb(192, 192, 192)' });
+          } else {
+            $('.shida,  .yidva, .dzebna, .gilaki, .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').removeClass('shidadark');
+            $('body').css('background-color', 'rgb(211, 210, 210)');
+            $('header').css('background-color', 'silver');
+            $('.kalatasul > a').css('color', 'black');
+            $('.navbar').css('box-shadow', '0 10px 50px 5px rgb(252, 252, 252);');
+            $('.kalata > a,.card-title, .card-text').css('color', 'black');
+            $('.navbar-light, .nav-item, .navbar-brand, .navbar-nav, .nav-link').css({ 'color': 'black', 'border-color': 'black' });
+          }
+          //darkmode bagis dafiqsva ()
           var raodenoba = 0;
           var srulitanxa = [];
-          var id = []; //iyreba aidishnikebi gasafiltria masivi (Set) 
-           $('.yidva').on('click', function () {
+          var id = [];
+          $('.yidva').on('click', function () {
+
             raodenoba += 1;
             var tanxa = parseInt($(this).attr('value'), 10);
             var saxeli = $(this).attr('data');
@@ -178,47 +198,45 @@ function searchProduct() {
             sum = srulitanxa.reduce((a, b) => a + b);
             id.push($(this).attr('id'));
             var set = new Set(id);
-        
-            // jamis masivtan mushaoba
-            for (let b = 0; b < srulitanxa.length; b++) {
-              for (let s = 0; s < b; s++) {
-                if (srulitanxa[b] == srulitanxa[s]) {
-                  delete srulitanxa[b];
-                  delete srulitanxa[s];
+            console.log(id);
+            
+              // jamis masivtan mushaoba
+              for (let b = 0; b < srulitanxa.length; b++) {
+                for (let s = 0; s < b; s++) {
+                  if (srulitanxa[b] == srulitanxa[s]) {
+                    delete srulitanxa[b];
+                    delete srulitanxa[s];
+                  }
                 }
               }
-            }
-            //jamis masivtan mushaoba
-        
+              //jamis masivtan mushaoba
+          
+              //modzrav paneltan mushaoba 
             //modzrav paneltan mushaoba 
+              //modzrav paneltan mushaoba 
             $(this).toggleClass('class');
             if ($(this).attr('class').includes('class')) {
               $(this).text('გაუქმება');
-              $('.kalata').removeClass('zemot');
-              $('.kalatasul').removeClass('zemot');
-              $('.gaukmeba1').removeClass('zemot');
+              $('.kalata, .kalatasul, .gaukmeba1').removeClass('zemot');
         
             } else {
               raodenoba -= 2;
               $(this).text('შეძენა');
               if (raodenoba <= 0) {
-                $('.kalata').addClass('zemot');
-                $('.kalatasul').addClass('zemot');
-                $('.gaukmeba1').addClass('zemot');
+                $('.kalata, .kalatasul, .gaukmeba1').addClass('zemot');
                 $('.gaukmeba1').text('ok');
               }
               sum = srulitanxa.reduce((a, b) => a + b);
             }
-        
-        
-            $('.aq').text('კალათში ' + raodenoba + ' ნივთია');
-            $('.aqsul').text('ჯამში ' + sum + ' ლარი');
-            $('.kalata').addClass('kalata2');
-            $('.gaukmeba1').text('X');
-            $('.kalatasul').addClass('kalatasul2');
-            $('.gaukmeba1').addClass('gaukmeba2');
+          
+              $('.aq').text('კალათში ' + raodenoba + ' ნივთია');
+              $('.aqsul').text('ჯამში ' + sum + ' ლარი');
+              $('.kalata').addClass('kalata2');
+              $('.gaukmeba1').text('X');
+              $('.kalatasul').addClass('kalatasul2');
+              $('.gaukmeba1').addClass('gaukmeba2');
+              
           });
-          //modzravipaneli
         }
       }
     }
@@ -448,17 +466,14 @@ $(document).ready(function () {
     $(this).toggleClass('class');
     if ($(this).attr('class').includes('class')) {
       $(this).text('გაუქმება');
-      $('.kalata').removeClass('zemot');
-      $('.kalatasul').removeClass('zemot');
-      $('.gaukmeba1').removeClass('zemot');
+      $('.kalata, .kalatasul, .gaukmeba1').removeClass('zemot');
+     
 
     } else {
       raodenoba -= 2;
       $(this).text('შეძენა');
       if (raodenoba <= 0) {
-        $('.kalata').addClass('zemot');
-        $('.kalatasul').addClass('zemot');
-        $('.gaukmeba1').addClass('zemot');
+        $('.kalata, .kalatasul, .gaukmeba1').addClass('zemot');
         $('.gaukmeba1').text('ok');
       }
       sum = srulitanxa.reduce((a, b) => a + b);
@@ -471,6 +486,7 @@ $(document).ready(function () {
     $('.gaukmeba1').text('X');
     $('.kalatasul').addClass('kalatasul2');
     $('.gaukmeba1').addClass('gaukmeba2');
+  
   });
   $('.gaukmeba1').on('click', () => {
     sum = 0;
@@ -481,9 +497,7 @@ $(document).ready(function () {
 
     $('.yidva').text("შეძენა");
     $('.yidva').removeClass('class');
-    $('.kalata').addClass('zemot');
-    $('.kalatasul').addClass('zemot');
-    $('.gaukmeba1').addClass('zemot');
+    $('.kalata, .kalatasul, .gaukmeba1').addClass('zemot');
     $('.gaukmeba1').text('ok');
   });
   //modzrav paneltan mushaoba 
@@ -503,7 +517,7 @@ $(document).ready(function () {
   //---carusel---//
 
   //darkmode//
-  $('.lbl').on('click', () => {
+  $('.lbl').on('click', function func (){
     $('.lbl').toggleClass('darkmode');
     if ($('.lbl').attr('class').includes('darkmode')) {
       $('.shida, .yidva, .dzebna, .gilaki,  .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').addClass('shidadark');
@@ -557,6 +571,8 @@ function sortListDesc(sortType) {
 function insertAfter(elem, refElem) {
   return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
 }
+
+
 
 //sort>
 
