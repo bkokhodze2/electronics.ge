@@ -167,21 +167,24 @@ function searchProduct() {
           $('.napovni').append(inputVar);
           //darkmode bagis dafiqsva (mtavarisaiti roca darkmodze iyo da vserchavdit nivts amogdebuli nivtebs ar enicheboda dark ferebi)
           if ($('.lbl').attr('class').includes('darkmode')) {
-            $('.shida, .yidva, .dzebna, .gilaki,  .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').addClass('shidadark');
+            $('.shida, .card,  .kalata, .kalatasul, .gaukmeba1').addClass('shidadark');
             $('body').css('background-color', 'black');
             $('header').css('background-color', 'rgb(61, 61, 61)');
             $('.kalatasul > a').css('color', 'rgb(192, 192, 192)');
             $('.navbar').css('box-shadow', 'none');
             $('.kalata > a, .card-title, .card-text').css('color', 'rgb(192, 192, 192)');
             $('.navbar-light, .nav-item, .navbar-brand, .navbar-nav, .nav-link').css({ 'color': 'rgb(192, 192, 192)', 'border-color': 'rgb(192, 192, 192)' });
+            $('.yidva').css({'color': 'rgb(192, 192, 192)', 'border-color': 'rgb(192, 192, 192)'});
           } else {
-            $('.shida,  .yidva, .dzebna, .gilaki, .card, .dropdown-item, .kalata, .kalatasul, .gaukmeba1').removeClass('shidadark');
+            $('.shida, .dzebna, .gilaki, .card,  .kalata, .kalatasul, .gaukmeba1').removeClass('shidadark');
             $('body').css('background-color', 'rgb(211, 210, 210)');
             $('header').css('background-color', 'silver');
             $('.kalatasul > a').css('color', 'black');
             $('.navbar').css('box-shadow', '0 10px 50px 5px rgb(252, 252, 252);');
             $('.kalata > a,.card-title, .card-text').css('color', 'black');
             $('.navbar-light, .nav-item, .navbar-brand, .navbar-nav, .nav-link').css({ 'color': 'black', 'border-color': 'black' });
+            $('.yidva').css({'color': 'black', 'border-color': 'black'});
+           
           }
           //darkmode bagis dafiqsva ()
 
@@ -212,33 +215,6 @@ function searchProduct() {
             }
             //jamis masivtan mushaoba
 
-            //modzrav paneltan mushaoba 
-              //modzrav paneltan mushaoba 
-            //modzrav paneltan mushaoba 
-              //modzrav paneltan mushaoba 
-            //modzrav paneltan mushaoba 
-              //modzrav paneltan mushaoba 
-            //modzrav paneltan mushaoba 
-              //modzrav paneltan mushaoba 
-            //modzrav paneltan mushaoba 
-              //modzrav paneltan mushaoba 
-            //modzrav paneltan mushaoba 
-              //modzrav paneltan mushaoba 
-            //modzrav paneltan mushaoba 
-              //modzrav paneltan mushaoba 
-            //modzrav paneltan mushaoba 
-              //modzrav paneltan mushaoba 
-            //modzrav paneltan mushaoba 
-              //modzrav paneltan mushaoba 
-            //modzrav paneltan mushaoba 
-              //modzrav paneltan mushaoba 
-            //modzrav paneltan mushaoba 
-              //modzrav paneltan mushaoba 
-            //modzrav paneltan mushaoba 
-              //modzrav paneltan mushaoba 
-            //modzrav paneltan mushaoba 
-              //modzrav paneltan mushaoba 
-            //modzrav paneltan mushaoba 
             $(this).toggleClass('class');
             if ($(this).attr('class').includes('class')) {
               $(this).text('გაუქმება');
