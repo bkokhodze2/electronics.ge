@@ -161,11 +161,12 @@ function searchProduct() {
       var name = Products[i].Name.toLowerCase();
       if (name.includes(input)) {
         outputPrep(i);
+      
         document.getElementById("searchBar").onclick = () => {
           $('.napovni').empty();
           $('.carusel').remove();
           $('.napovni').append(inputVar);
-          //darkmode bagis dafiqsva (mtavarisaiti roca darkmodze iyo da vserchavdit nivts amogdebuli nivtebs ar enicheboda dark ferebi)
+          //darkmode bagis dafiqsva (cudi gzit)
           if ($('.lbl').attr('class').includes('darkmode')) {
             $('.shida, .card,  .kalata, .kalatasul, .gaukmeba1').addClass('shidadark');
             $('body').css('background-color', 'black');
@@ -202,7 +203,7 @@ function searchProduct() {
             sum = srulitanxa.reduce((a, b) => a + b);
             id.push($(this).attr('id'));
             var set = new Set(id);
-            console.log(id);
+            
 
             // jamis masivtan mushaoba
             for (let b = 0; b < srulitanxa.length; b++) {
@@ -462,7 +463,7 @@ $(document).ready(function () {
       }
     }
     //jamis masivtan mushaoba
-
+    console.log(set);
     //modzrav paneltan mushaoba 
     $(this).toggleClass('class');
     if ($(this).attr('class').includes('class')) {
@@ -575,20 +576,7 @@ function sortListDesc(sortType) {
 function insertAfter(elem, refElem) {
   return refElem.parentNode.insertBefore(elem, refElem.nextSibling);
 }
-// var name="nodari";
-// var name1=name.reverse();
-// console.log(name1);
-function reverse(str){
-  return str.split("").reverse().join("");
-}
-console.log(reverse("iradon"));
 
-
-// function reverseString(str) {
-//   return str;
-// }
-// console.log(reverseString("hellloo"));
-//sort>
 
 
 

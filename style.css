@@ -210,7 +210,6 @@ tr:nth-child(even) {
   order:3;
 }
 .yidva{
-  
   font-size: 24px;
   display: flex;
   justify-content: center;
@@ -221,12 +220,11 @@ tr:nth-child(even) {
   border: 1.5px solid black;
   background-color: rgba(54, 54, 54, 0);
   color:rgb(0, 0, 0);
-  
   font-weight: bold;
   transition: 0.4s;
   order:4;
   bottom:0px;
-
+  outline: none !important;
 }
 .yidva:hover{
   min-width: 80%;
@@ -263,14 +261,14 @@ tr:nth-child(even) {
   margin-top: 30px;
 }
 .card-img-top{
-   height: 250px;
-   width: auto;
-   position: relative;
-   margin: 0 auto;
+  height: 250px;
+  width: auto;
+  position: relative;
+  margin: 0 auto;
 }
 .card {
- height: 510px;
- width: auto;
+  height: 510px;
+  width: auto;
   position: relative;
   border-radius: 15px;
   border:2px solid black;
@@ -671,9 +669,6 @@ color:rgb(0, 0, 0);
 @media screen and (max-width:1165px){
   .nav-item{
   }
-  
-  
-
   .navbar-brand{
     display: none;
   }
